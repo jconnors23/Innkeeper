@@ -15,7 +15,7 @@ client.on('ready', () => {   // when bot is ready, listening to user tags
 
 client.on('messageCreate', async (message: djs.Message) => {
     const queries = Array.from(message.content.matchAll(/#(.*?)#/gi)).map(match => match[1])  
-    //  regex ? = grab locals (lazy), g  = global, i = case insensitive .=anychar .map =  [ 1, 3, 4, ] [ 2, 3, 4,] , 1 grp at a time
+    //  regex ? = grab locals (lazy), g  = global, i = case insensitive .=anychar .map =  [ 1, 3, 4, ] [ 2, 3, 4,] , 1 grp/query at a time
     if (queries.length == 0) { return }
     const query = queries[0]; // get the first 
     const response = await axios.get('https://api.scryfall.com/cards/search?q=' + query); 
@@ -30,7 +30,10 @@ client.on('messageCreate', async (message: djs.Message) => {
         name: '🌟',
         value: card.prices.usd_foil,
         inline: true
-    }].filter(object => object.value))]})  // filter null prices 
+    }].filter(field => field.value).map((field) => {              // filter null prices   
+        field.value = `[${field.value}](${card.purchase_uris.tcgplayer})`          // fetch tcg player link 
+        return field
+    }))]}) 
 })
 
 client.login(process.env.discord_token) // tell the bot to login 
