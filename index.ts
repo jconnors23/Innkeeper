@@ -13,11 +13,13 @@ client.on('ready', () => {   // when bot is ready, listening to user tags
 
 // rec msg, filter msg (look for symbols), pull cards from it, if cards, take cards -> scryfall, what scryfall returns, respond to user with that img
 
-client.on('messageCreate', async (message: djs.Message) => {
+client.on('messageCreate', async (message) => {
     const queries = Array.from(message.content.matchAll(/#(.*?)#/gi)).map(match => match[1])  
     //  regex ? = grab locals (lazy), g  = global, i = case insensitive .=anychar .map =  [ 1, 3, 4, ] [ 2, 3, 4,] , 1 grp/query at a time
     if (queries.length == 0) { return }
-    const query = queries[0]; // get the first 
+    const query = queries[0]; // get the first request
+    //@ts-ignore
+    await message.channel.sendTyping()
     const response = await axios.get('https://api.scryfall.com/cards/search?q=' + query); 
     const card = response.data.data[0]; // gets the first card
     const cardimage = card.image_uris.border_crop;
