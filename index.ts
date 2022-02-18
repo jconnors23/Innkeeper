@@ -1,4 +1,5 @@
 import djs from 'discord.js';
+import http from 'http'; 
 import axios from 'axios'; 
 require('dotenv').config();
 
@@ -25,3 +26,6 @@ client.on('messageCreate', async (message: djs.Message) => {
 
 client.login(process.env.discord_token) // tell the bot to login 
 
+http.createServer((request, response) => { // make heroku realize app is active
+    response.writeHead(200).end()
+}).listen(process.env.PORT || 3000)
