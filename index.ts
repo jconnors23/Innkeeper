@@ -21,7 +21,16 @@ client.on('messageCreate', async (message: djs.Message) => {
     const response = await axios.get('https://api.scryfall.com/cards/search?q=' + query); 
     const card = response.data.data[0]; // gets the first card
     const cardimage = card.image_uris.border_crop;
-    message.reply(cardimage)   
+    message.reply({embeds: [new djs.MessageEmbed().setImage(cardimage).setFields([
+        {
+        name: '$',
+        value: card.prices.usd,
+        inline: true
+    }, {
+        name: '🌟',
+        value: card.prices.usd_foil,
+        inline: true
+    }].filter(object => object.value))]})  // filter null prices 
 })
 
 client.login(process.env.discord_token) // tell the bot to login 
