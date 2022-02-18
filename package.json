@@ -1,10 +1,13 @@
 {
   "name": "innkeeper",
   "version": "1.0.0",
+  "engines": {"node": "16.14.0", "npm": "8.3.1"},
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
