@@ -33,7 +33,7 @@ client.on('messageCreate', async (message) => {
         if (card.image_uris) {
             cardimages.push(card.image_uris.border_crop);
         } else {
-            cardimages.push(card.card_faces![0].image_uris!.small, card.card_faces![1].image_uris!.small); // card img arr for double sided cards  
+            cardimages.push(card.card_faces![0].image_uris!.border_crop, card.card_faces![1].image_uris!.border_crop); // card img arr for double sided cards  
         }
         const fields = [new djs.MessageEmbed().setFields([
             {
