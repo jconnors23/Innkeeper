@@ -65,3 +65,6 @@ client.login(process.env.discord_token) // tell the bot to login
 http.createServer((request, response) => { // make heroku realize app is active
     response.writeHead(200).end()
 }).listen(process.env.PORT || 3000)
+
+
+//  last time S
