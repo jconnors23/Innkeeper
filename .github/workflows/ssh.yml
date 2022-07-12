@@ -31,4 +31,4 @@ jobs:
           cd Innkeeper
           git pull
           kill -KILL $(pgrep -a 'node' | grep Innkeeper | awk '{print $1}')
-          forever start dist.index.js
+          forever start dist/index.js
