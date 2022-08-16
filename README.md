@@ -1,2 +1,5 @@
 # Innkeeper
- Discord bot that fetches Magic the Gathering Cards from Scryfall and displays them for users. 
+
+Intuition:
+
+This bot was created to serve as a tool for users in a Discord server I created. It enables our community to fetch Magic the Gathering cards with ease and helps facilitate conversations. It uses the Scryfall API to fetch cards. 
