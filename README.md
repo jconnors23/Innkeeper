@@ -12,7 +12,7 @@ Project Intution - https://github.com/jconnors23/Innkeeper/blob/main/README.md#p
 
 Technologies - https://github.com/jconnors23/Innkeeper/blob/main/README.md#technology-descriptions
 
-Installation & Implementation - https://github.com/jconnors23/Innkeeper/blob/main/README.md#installation--implementation
+Installation - https://github.com/jconnors23/Innkeeper/blob/main/README.md#installation--implementation
 
 Future Deployment - https://github.com/jconnors23/Innkeeper/blob/main/README.md#future-development
 
@@ -32,7 +32,7 @@ Github Actions: Automated SSH deployment to AWS Services for hosting purposes.
 
 AWS Services: AWS Lightsail for 24/7 hosting.
 
-# Installation & Implementation
+# Installation
 
 The following are actions for getting Innkeeper setup in your development environment:
 
