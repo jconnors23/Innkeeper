@@ -30,17 +30,17 @@ AWS Services: AWS Lightsail for 24/7 hosting.
 
 # Installation & Implementation
 
-The following are the steps for getting Innkeeper setup in your development environment:
+The following are actions for getting Innkeeper setup in your development environment:
 
-1. Discord: You will need to have Discord developer portal access and create a bot for your respective server.
+Discord: You will need to have Discord developer portal access and create a bot for your respective server.
 
-2. Env: Follow the .env_example file provided and create a .env file containing your bot's respective discord_token value.
+Env: Follow the .env_example file provided and create a .env file containing your bot's respective discord_token value.
 
-3. NPM: After cloning the repository, run npm i to install the necessary packages.
+NPM: After cloning the repository, run npm i to install the necessary packages.
 
-4. NPM: Npm run build, npm run start, and npm run dev are respective commands for building, starting, and running the bot in dev mode.
+NPM: Npm run build, npm run start, and npm run dev are respective commands for building, starting, and running the bot in dev mode.
 
-5. Github Action: The SSH Deploy Github Action runs the necessary commands for Innkeeper to be deployed and hosted 24/7 via AWS Lightsail services. If you wish to use this action, create and set up an AWS Lightsail instance for your bot.
+Github Action: The SSH Deploy Github Action runs the necessary commands for Innkeeper to be deployed and hosted 24/7 via AWS Lightsail services. If you wish to use this action, create and set up an AWS Lightsail instance for your bot.
 
 # Future Development
 
