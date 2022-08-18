@@ -12,7 +12,7 @@ Project Intution - https://github.com/jconnors23/Innkeeper/blob/main/README.md#p
 
 Technologies - https://github.com/jconnors23/Innkeeper/blob/main/README.md#technology-descriptions
 
-Installation - https://github.com/jconnors23/Innkeeper/blob/main/README.md#installation--implementation
+Installation - https://github.com/jconnors23/Innkeeper/blob/main/README.md#installation
 
 Future Deployment - https://github.com/jconnors23/Innkeeper/blob/main/README.md#future-development
 
