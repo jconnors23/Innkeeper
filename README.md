@@ -48,4 +48,4 @@ Github Action: The SSH Deploy Github Action runs the necessary commands for Innk
 
 # Future Development
 
-Test Scripts + Full Contiuous Integration & Deployment: Innkeeper is currently in the process of obtaining new test cases for ease of access and deployment for new developers. Additionally, Innkeeper's Github Action will soon change from SSH Deploy to Test & SSH Deploy to run these new test cases each time before the bot is sent to Lightsail. This will facilitate a full CI / CD pipeline for Innkeeper and aid in future enhancements of the bot.
+Test Scripts + Continuous Integration & Continuous Deployment: Innkeeper is currently in the process of obtaining new test cases for ease of access and deployment for new developers. Additionally, Innkeeper's Github Action will soon change from SSH Deploy to Test & SSH Deploy to run these new test cases each time before the bot is sent to Lightsail. This feature will facilitate a CI / CD pipeline for Innkeeper and aid in future development of the bot.
