@@ -4,17 +4,17 @@ Discord bot that fetches Magic the Gathering Cards from Scryfall and displays th
 
 # Table of Contents:
 
-Project Intution -
+Project Intution - https://github.com/jconnors23/Innkeeper/blob/main/README.md#project-intuition
 
-Technology Descriptions -
+Technology Descriptions - https://github.com/jconnors23/Innkeeper/blob/main/README.md#technology-descriptions
 
-Installation & Implementation -
+Installation & Implementation - https://github.com/jconnors23/Innkeeper/blob/main/README.md#installation--implementation
 
-Future Deployment -
+Future Deployment - https://github.com/jconnors23/Innkeeper/blob/main/README.md#future-development
 
 # Project Intuition:
 
-This bot was created to serve as a tool for users in a Discord server I created. It enables our community to fetch Magic the Gathering cards with ease and helps facilitate conversations concerning the card game. It uses the Scryfall API to fetch cards. Developing Innkeeper contributed to my learning through allowing me to dive into developing with Discord, Typescript, Axios, Github actions, and finally AWS services.
+This bot serves as a tool for users in a Discord server. It enables our community to fetch Magic the Gathering cards with ease and helps facilitate conversations concerning the game. It uses the Scryfall API to fetch cards. Developing Innkeeper has contributed to my learning through allowing me to develop with Discord JS, Typescript, Axios, Github Actions, and AWS services.
 
 # Technology Descriptions
 
@@ -24,9 +24,9 @@ Typescript: Developed entirely in Typescript to allow for ease of understanding 
 
 Axios: Get requests for fetching cards.
 
-Github Actions: Github action allows the bot to be automatically deployed to AWS Services for hosting purposes.
+Github Actions: Automated SSH deployment to AWS Services for hosting purposes.
 
-AWS Services: AWS Lightsail for 24/7 hosting purposes.
+AWS Services: AWS Lightsail for 24/7 hosting.
 
 # Installation & Implementation
 
@@ -40,8 +40,8 @@ The following are the steps for getting Innkeeper setup in your development envi
 
 4. NPM: Npm run build, npm run start, and npm run dev are respective commands for building, starting, and running the bot in dev mode.
 
-5. Github Action: The SSH Deploy Github Action runs the necessary commands for Innkeeper to be deployed and hosted 24/7 via AWS Lightsail services. If you wish to use this action, create an AWS Lightsail instance.
+5. Github Action: The SSH Deploy Github Action runs the necessary commands for Innkeeper to be deployed and hosted 24/7 via AWS Lightsail services. If you wish to use this action, create and set up an AWS Lightsail instance for your bot.
 
 # Future Development
 
-Test Scripts + full Contiuous Integration & Deployment: Innkeeper is currently in the process of obtaining new test cases for ease of access and deployment for new developers. Additionally, Innkeeper's Github Action will turn from SSH Deploy - > Test & SSH Deploy to run these new test cases each time before the bot is sent to Lightsail. This will facilitate a full CI / CD pipeline for Innkeeper and aid in future enhancements of the bot.
+Test Scripts + Full Contiuous Integration & Deployment: Innkeeper is currently in the process of obtaining new test cases for ease of access and deployment for new developers. Additionally, Innkeeper's Github Action will soon change from SSH Deploy to Test & SSH Deploy to run these new test cases each time before the bot is sent to Lightsail. This will facilitate a full CI / CD pipeline for Innkeeper and aid in future enhancements of the bot.
