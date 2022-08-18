@@ -15,7 +15,7 @@ client.on('messageCreate', async (message) => {
         const queries = Array.from(message.content.matchAll(/#(.*?)#/gi))
         /*  regex, looking for '# #' notation which signals user request */
         if (queries.length == 0) { return }
-        const query = queries[0][1];  // {ex string: #abc# world [0]: #abc# world , [1]: abc  }
+        const query = queries[0][1];  // {ex string: #abc# world [0]: #abc# world , [1]: abc}
         await message.channel.sendTyping();
         let response;
         try {
