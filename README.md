@@ -10,7 +10,7 @@ The following is a quick demonstration of Innkeeper:
 
 Project Intution - https://github.com/jconnors23/Innkeeper/blob/main/README.md#project-intuition
 
-Technology Descriptions - https://github.com/jconnors23/Innkeeper/blob/main/README.md#technology-descriptions
+Technologies - https://github.com/jconnors23/Innkeeper/blob/main/README.md#technology-descriptions
 
 Installation & Implementation - https://github.com/jconnors23/Innkeeper/blob/main/README.md#installation--implementation
 
@@ -20,7 +20,7 @@ Future Deployment - https://github.com/jconnors23/Innkeeper/blob/main/README.md#
 
 This bot serves as a tool for users in a Discord server. It enables our community to fetch Magic the Gathering cards with ease and helps facilitate conversations concerning the game. It uses the Scryfall API to fetch cards. Developing Innkeeper has contributed to my learning through allowing me to develop with Discord JS, Typescript, Axios, Github Actions, and AWS services.
 
-# Technology Descriptions
+# Technologies
 
 Discord JS: Developed using the Discord library to allow the bot to be integrated through Discord.
 
