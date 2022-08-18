@@ -4,11 +4,13 @@ Discord bot that fetches Magic the Gathering Cards from Scryfall and displays th
 
 # Table of Contents:
 
-Project Intution
+Project Intution -
 
-Technology Descriptions
+Technology Descriptions -
 
-Installation & Implementation
+Installation & Implementation -
+
+Future Deployment -
 
 # Project Intuition:
 
