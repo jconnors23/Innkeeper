@@ -8,13 +8,13 @@ https://user-images.githubusercontent.com/9403665/185666825-95b6b72b-9a69-439f-a
 
 # Table of Contents:
 
-Project Intution - https://github.com/jconnors23/Innkeeper/blob/main/README.md#project-intuition
+[Project Intution](#project-intuition)
 
-Technologies - https://github.com/jconnors23/Innkeeper/blob/main/README.md#technology-descriptions
+[Technologies](#technologies)
 
-Installation - https://github.com/jconnors23/Innkeeper/blob/main/README.md#installation
+[Installation](#installation) 
 
-Future Deployment - https://github.com/jconnors23/Innkeeper/blob/main/README.md#future-development
+[Future Deployment](#future-deployment)
 
 # Project Intuition:
 
