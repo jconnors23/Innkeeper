@@ -30,5 +30,4 @@ jobs:
           cd projects
           cd Innkeeper
           git pull
-          kill -KILL $(pgrep -a 'node' | grep Innkeeper | awk '{print $1}')
-          forever start dist/index.js
+          pm2 restart Innkeeper
