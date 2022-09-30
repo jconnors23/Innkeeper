@@ -10,6 +10,15 @@ client.on('ready', () => {   // when bot is ready, listening to user tags
     console.log(client.user?.tag)
 })
 
+export async function FetchCard(query: string): Promise <any> {
+    try {
+        let response = await axios.get('https://api.scryfall.com/cards/search?q=' + "!" + "\"" + query + "\"") 
+        return response.data.data[0];
+    } catch (error: any) {
+        throw error.response.data.details;
+    }
+}
+
 client.on('messageCreate', async (message) => {
     try {
         const queries = Array.from(message.content.matchAll(/#(.*?)#/gi))
@@ -17,14 +26,13 @@ client.on('messageCreate', async (message) => {
         if (queries.length == 0) { return }
         const query = queries[0][1];  // {ex string: #abc# world [0]: #abc# world , [1]: abc}
         await message.channel.sendTyping();
-        let response;
+        let card: any;
         try {
-            response = await axios.get('https://api.scryfall.com/cards/search?q=' + "!" + "\"" + query + "\"") // prefix with ! mark to return specific card 
+            card = await FetchCard(query); 
         } catch (error: any) {
-            message.reply(error.response.data.details);
+            message.reply(error);
             return;
         }
-        const card = response.data.data[0];
         const cardimages = [];
         if (card.image_uris) {
             cardimages.push(card.image_uris.border_crop);
@@ -56,4 +64,6 @@ client.on('messageCreate', async (message) => {
     }
 })
 
-client.login(process.env.discord_token) 
+if (require.main === module) {
+    client.login(process.env.discord_token) 
+}
