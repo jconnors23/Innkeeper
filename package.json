@@ -1,13 +1,17 @@
 {
   "name": "innkeeper",
   "version": "1.0.0",
-  "engines": {"node": "16.14.0", "npm": "8.3.1"},
-  "description": "",
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1"
+  },
+  "description": "Discord bot that fetches Magic the Gathering Cards from Scryfall and displays them for users.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "dev": "ts-node index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -17,8 +21,17 @@
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "node": "^17.4.0",
-    "ts": "^0.2.2",
-    "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
-  }
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jconnors23/Innkeeper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jconnors23/Innkeeper/issues"
+  },
+  "homepage": "https://github.com/jconnors23/Innkeeper#readme"
 }
