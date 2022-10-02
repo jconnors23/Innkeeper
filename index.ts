@@ -25,6 +25,7 @@ client.on('messageCreate', async (message) => {
         /*  regex, looking for '# #' notation which signals user request */
         if (queries.length == 0) { return }
         const query = queries[0][1];  // {ex string: #abc# world [0]: #abc# world , [1]: abc}
+        // @ts-ignore
         await message.channel.sendTyping();
         let card: any;
         try {
