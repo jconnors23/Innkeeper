@@ -44,8 +44,5 @@ NPM: After cloning the repository, run npm i to install the necessary packages.
 
 NPM: Npm run build, npm run start, and npm run dev are respective commands for building, starting, and running the bot in dev mode.
 
-Github Action: The SSH Deploy Github Action runs the necessary commands for Innkeeper to be deployed and hosted 24/7 via AWS Lightsail services. If you wish to use this action, create and set up an AWS Lightsail instance for your bot.
+Github Action: The SSH Deploy Github Action runs the necessary commands for Innkeeper to be deployed and hosted 24/7 via AWS Lightsail. If you wish to use this action, create and set up an AWS Lightsail instance for your bot.
 
-# Future Development
-
-Test Scripts + Continuous Integration & Continuous Deployment: Innkeeper is currently in the process of obtaining new test cases for ease of access and deployment for new developers. Additionally, Innkeeper's Github Action will soon change from SSH Deploy to Test & SSH Deploy to run these new test cases each time before the bot is sent to Lightsail. This feature will facilitate a CI / CD pipeline for Innkeeper and aid in future development of the bot.
